@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070b" />
+    <title>Arachnid: Neon City — Screen-Locked Streaks & Stable Swing Pass</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="boot-screen" role="status" aria-live="polite">
+      <div class="boot-card">
+        <div class="boot-mark">A</div>
+        <div class="boot-copy">
+          <strong>ARACHNID: NEON CITY</strong>
+          <span id="boot-status">Starting local game server…</span>
+        </div>
+        <div class="boot-spinner"></div>
+        <pre id="boot-error" hidden></pre>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="./web/boot.js"></script>
+  </body>
+</html>
