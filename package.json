@@ -1,0 +1,13 @@
+{
+  "name": "arachnid-neon-city",
+  "private": true,
+  "version": "1.7.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs . 5173",
+    "build": "node scripts/build.mjs",
+    "preview": "node server.mjs dist 4173",
+    "compile": "tsc -p tsconfig.emit.json",
+    "start": "node server.mjs . 5173"
+  }
+}
